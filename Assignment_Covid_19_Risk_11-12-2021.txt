@@ -1,0 +1,17 @@
+age = input('Are you a cigarette addict older than 75 years old? Answer True or False: ')  #inputs are case sensitive
+
+chronic = input('Do you have a severe chronic disease? Answer True or False: ')
+
+immune = input('Is your immune system too weak? Answer True or False: ')
+
+age, chronic, immune = eval(age), eval(chronic), eval(immune)
+
+risk = age or chronic or immune
+
+if risk == False:
+
+    print('You are not at risk.')
+
+else:
+
+    print('You are at risk.')
